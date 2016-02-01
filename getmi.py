@@ -18,7 +18,7 @@ class mi_buy():
 
 	def parserHTML(self,HTML):
 		check = HTML.find("3154300003")
-		if check == True:
+		if check > 0:
 			print("開放購買")
 			self.sendMail()
 		else:
